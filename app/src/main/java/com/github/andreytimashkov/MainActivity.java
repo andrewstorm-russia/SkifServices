@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements SkifTbCallback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        
+
         new SkifJson(getApplicationContext(),((EditText) findViewById(R.id.login)).getText().toString(),((EditText) findViewById(R.id.pwd)).getText().toString(), this).runTbFunc("","");
     }
 
